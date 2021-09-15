@@ -1,13 +1,13 @@
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", sans-serif;
+  color: #5b6275;
 }
 
 h1 {
-  color: #878787;
-  font-size: 24px;
-  font-weight: 100;
+  font-size: 45px;
+  font-weight: 400;
   line-height: 28px;
-  margin-bottom: 0;
+  margin-bottom: 15px;
 }
 
 ul {
@@ -18,10 +18,9 @@ ul {
 li {
   list-style: none;
   margin: 0;
-  padding: 0;
-  color: rgb(135, 135, 135);
+  padding: 3px;
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 200;
   line-height: 19px;
 }
 
@@ -31,7 +30,7 @@ li::first-letter {
 
 .weather-app-wrapper {
   max-width: 600px;
-  margin: 30px auto;
+  margin: auto;
 }
 
 .weather-app {
@@ -45,30 +44,38 @@ li::first-letter {
 }
 
 .weather-temperature img {
-  margin-right: 10px;
-  height: 64px;
-  width: 64px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  height: 100px;
+  width: 100px;
 }
 
 .weather-temperature strong {
-  color: rgb(33, 33, 33);
-  font-size: 64px;
+  font-size: 75px;
   font-weight: 400;
-  line-height: 1;
+  margin-top: 25px;
 }
 
 .weather-temperature .units {
   position: relative;
   font-size: 16px;
-  top: -34px;
-  padding-left: 5px;
+  top: -54px;
+  padding-left: 10px;
 }
 
 .weather-temperature .active {
-  color: rgb(33, 33, 33);
+  color: #8ec351;
   cursor: default;
   text-decoration: none;
 }
 .weather-temperature .active:hover {
   text-decoration: none;
+}
+
+.moreInfo {
+  margin-left: 100px;
+}
+
+.description {
+  font-style: italic;
 }
