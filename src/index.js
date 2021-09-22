@@ -21,6 +21,32 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+  let forecastHTML = `<div class="row">`;
+  let days = ["Sun", "Mon", "Tues", "Wed", "Thur", "Fri", "Sat"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+    <div class="col-2">
+                <div class="weather-forecast-date">${day}</div>
+                <img
+                  src="http://openweathermap.org/img/wn/02d@2x.png"
+                  alt=""
+                  width="36px"
+                />
+                <div class="weather-forecast-temperatures">
+                  <span class="weather-forecast-high">18° | </span>
+                  <span class="weather-forecast-low">12°</span>
+                </div>
+              </div>
+    `;
+    forecastHTML = forecastHTML + `</div>`;
+    forecastElement.innerHTML = forecastHTML;
+  });
+}
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(response.data.main.temp);
@@ -81,3 +107,4 @@ celciusLink.addEventListener("click", displayCelciusTemperature);
 let celciusTemperature = null;
 
 search("San Francisco");
+displayForecast();
