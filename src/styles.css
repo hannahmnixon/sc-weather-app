@@ -79,3 +79,21 @@ li::first-letter {
 .description {
   font-style: italic;
 }
+
+.weather-forecast {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  color: #7e7f83;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
+}
+
+.weather-forecast-low {
+  opacity: 0.5;
+}
