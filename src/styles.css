@@ -43,6 +43,11 @@ li::first-letter {
   margin-bottom: 20px;
 }
 
+.col-4 {
+  color: #858688;
+  font-size: 14px;
+}
+
 .weather-temperature img {
   margin-right: 5px;
   margin-bottom: 20px;
